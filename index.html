@@ -23,10 +23,10 @@
         </span>
 
         <span class="sm-menu-holder">
-          <span class=" sm-menu-sign color" id="menu-bar-bx">
+          <span class=" sm-menu-sign color" id="menu-bar-bx" onclick="openMenu();">
             <i class="fa fa-bars"></i> Menu
           </span>
-          <span class="sign-in sm-menu-sign">
+          <span class="sign-in sm-menu-sign" onclick="openLoginPage()">
             Sign In
           </span>
         </span>
@@ -43,7 +43,7 @@
     <div class="row-1 fnt-2">
       <div class="covid-19">
         <p>
-          <i class="fa fa-remove"></i>
+          <i class="fa fa-remove" onclick="closeCovid();"></i>
           Working to create a safe environment for all: <br>
           Branch lobbies and in-store branches are reopening soon.
         </p>
@@ -57,7 +57,7 @@
               Finding the right home and the right home loan is now more important than ever.
               We are here to help.
             </p>
-            <a href="#">Explore Home Loans</a>
+            <a href="account">Explore Home Loans</a>
           </div>
         </div>
       </div>
@@ -116,19 +116,19 @@
       <h3 class="fnt-1">Quick Links</h3>
       <hr>
       <div class="r4-content">
-        <div class="r4-col-3">
+        <div class="r4-col-3" onclick="openLoginPage();">
           <i class="fa fa-credit-card"></i>
           <p>Card Support</p>
         </div>
 
-        <div class="r4-col-3">
+        <div class="r4-col-3" onclick="openLoginPage();">
           <i class="fa fa-money"></i>
-          <p>Card Support</p>
+          <p>Transfer Support</p>
         </div>
 
-        <div class="r4-col-3">
+        <div class="r4-col-3" onclick="openLoginPage();">
           <i class="fa fa-wallet"></i>
-          <p>Card Support</p>
+          <p>Account Support</p>
         </div>
       </div>
     </div>
@@ -145,11 +145,14 @@
           <ul>
             <li>
               <i class="fa fa-envelope"></i>
-              <span>Send us a message</span>
+              <span>
+                <a href="mailto: contact@fnbcanada.com" style="color: inherit; text-decoration: none;">Send us a message</a>
+              </span>
             </li>
             <li>
-              <i class="fa fa-phone"></i>
-              <span>001 556 9875</span>
+              <i class="fa fa-phone-alt"></i>
+              <a href="tel: +16045214650" style="color: inherit; text-decoration: none;"><span>+1 604 521 4650</span></a>
+
             </li>
             <li>
               <i class="fa fa-clock-o"></i>
@@ -157,15 +160,53 @@
             </li>
             <li>
               <i class="fa fa-globe"></i>
-              <span>Canada</span>
+              <span>6750 Fourth Line Rd., North Gower, Ontario KOA 2TO</span>
             </li>
           </ul>
         </div>
       </div>
     </div>
     <footer>
-      <span style="border-right: 1px solid silver; width: 222px;">&copy First Nations Bank of Canada </span>
-      <span>Back to Top</span>
+      <span>&copy First Nations Bank of Canada </span>
     </footer>
+
+
+    <div class="menu-bx">
+      <i class="fa fa-close" onclick="closeMenu();"></i>
+      <div class="contents fnt-2">
+         <ul>
+           <li>Home</li>
+           <li>Bank</li>
+           <li>Borrow</li>
+           <li>Invest</li>
+           <li>Login</li>
+         </ul>
+         <span class="sign-in sm-menu-sign" onclick="openLoginPage()">
+           Sign In
+         </span>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        function openLoginPage(){
+          window.location.href = "account";
+        }
+        function openMenu(){
+          $(".menu-bx").fadeIn();
+        }
+        function closeMenu(){
+          $(".menu-bx").hide();
+        }
+        function closeCovid(){
+          $(".covid-19").hide();
+        }
+        $(".menu-bx ul li").click(
+          function(){
+            $(".menu-bx").hide();
+          }
+        );
+    </script>
   </body>
 </html>
