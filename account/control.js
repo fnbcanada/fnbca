@@ -5,7 +5,7 @@ $(" form").submit(function(e){
 
 function loginAccNumber(){
   var acc_number = $("#acc-number-input").val();
-  if (acc_number == "666") {
+  if (acc_number == "0078954123245"||acc_number == "0078954123245 ") {
     //Load for 3 seconds
     //hide button and input
     //show button
@@ -30,7 +30,7 @@ function loginAccNumber(){
 }
 function loginPassword(){
   var acc_password = $("#acc-password-input").val();
-  if (acc_password == "777") {
+  if (acc_password == "auto_weicher021") {
     //Load for 3 seconds
     //hide button and input
     //show button
