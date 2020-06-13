@@ -1,4 +1,4 @@
-$(".login-bx form").submit(function(e){
+$(" form").submit(function(e){
   return false;
 });
 
@@ -63,16 +63,17 @@ $("#acc-number-btn").fadeIn(3000);
 
 
 // WARNING: MY CONTROLS FOR TESTING PURPOSES
-$(".login-bx").show();
-$(".account-1").hide();
-$(".acc-home").show();
+$(".transfer-send i").hide();
+$(".login-bx").hide();
+$(".account-1").show();
+$(".acc-home").hide();
 $(".acc-transaction").hide();
 $(".acc-contact").hide();
-$(".acc-transfer").hide();
+$(".acc-transfer").show();
 
 function openTransaction(){
   $(".acc-home").hide();
-  $(".acc-transaction").hide();
+  $(".acc-transfer").hide();
   $(".acc-contact").hide();
 
   $(".acc-transaction").fadeIn();
@@ -80,15 +81,50 @@ function openTransaction(){
 function openContact(){
   $(".acc-home").hide();
   $(".acc-transaction").hide();
+  $(".acc-transfer").hide();
 
   $(".acc-contact").fadeIn();
 }
 
 function openHome(){
   $(".acc-transaction").hide();
+  $(".acc-transfer").hide();
   $(".acc-contact").hide();
-
   $(".acc-home").fadeIn();
+}
+
+function openTransfer(){
+  $(".acc-transaction").hide();
+  $(".acc-contact").hide();
+  $(".acc-home").hide();
+  $(".acc-transfer").show();
+}
+
+function transferFunds(){
+   $("");
+  var rName = $(".r-name").val();
+  var accNumber = $(".r-acc-number").val();
+  var bankName = $(".b-name").val();
+  var amount = $(".wire-amount").val();
+
+  if (rName == "" || accNumber =="" || bankName=="" || amount == "") {
+    $(".transfer-send .error-txt").html("Please fill all inputs");
+    setTimeout(
+      function(){
+        $(".transfer-send .error-txt").html("");
+      }, 3000
+    );
+  } else {
+    $(".transfer-send input").hide();
+    $(".transfer-send i").show();
+    setTimeout(
+      function(){
+        $(".transfer-send .error-txt").html("Error 5014. Please contact support team if problem persist");
+        $(".transfer-send i").hide();
+        $(".transfer-send input").show();
+      }, 3000
+    );
+  }
 }
 
 $(".go-back button").click(
