@@ -64,12 +64,12 @@ $("#acc-number-btn").fadeIn(3000);
 
 // WARNING: MY CONTROLS FOR TESTING PURPOSES
 $(".transfer-send i").hide();
-$(".login-bx").hide();
-$(".account-1").show();
-$(".acc-home").hide();
+$(".login-bx").show();
+$(".account-1").hide();
+$(".acc-home").show();
 $(".acc-transaction").hide();
 $(".acc-contact").hide();
-$(".acc-transfer").show();
+$(".acc-transfer").hide();
 
 function openTransaction(){
   $(".acc-home").hide();
