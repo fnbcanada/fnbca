@@ -10,203 +10,779 @@
     <link rel="icon" href="img/browser-icon.jpg">
     <title>First Nations Bank Canada | Business & Personal Banking & Insurance </title>
 
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/login.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="bn-header">
-      <header>
+
+    <div class="login-bx">
+
+      <div class="login-content">
         <span id="bank-logo" class="fnt-1">
           <h1>First Nations Bank</h1>
           <span class="ofcanada">of canada</span>
           <hr class="color-bg">
         </span>
-
-        <span class="sm-menu-holder">
-          <span class=" sm-menu-sign color" id="menu-bar-bx" onclick="openMenu();">
-            <i class="fa fa-bars"></i> Menu
-          </span>
-          <span class="sign-in sm-menu-sign" onclick="openLoginPage()">
-            Sign In
-          </span>
-        </span>
-        <span class="link-bg">
-           <a href="#" class="color">Bank</a>
-           <a href="#" class="color">Borrow</a>
-           <a href="#" class="color">Invest</a>
-           <a href="#" class="color">Connect</a>
-        </span>
-
-      </header>
-    </div>
-
-    <div class="row-1 fnt-2">
-      <div class="covid-19">
-        <p>
-          <i class="fa fa-remove" onclick="closeCovid();"></i>
-          Working to create a safe environment for all: <br>
-          Branch lobbies and in-store branches are reopening soon.
-        </p>
-      </div>
-      <div class="row-1-inner-content">
-        <div class="place-to-live">
-          <div class="ptl-bx">
-            <h3 class="fnt-1">A place to live. A place to love.</h3>
-            <hr>
+        <div class="online-banking">
+          <h3 class="fnt-1">Online Banking</h3>
+          <br>
+          <form class="" action="index.html" method="post">
+            <input type="number" name="" value="" class="bnk-input" id="acc-number-input" placeholder="Account number">
+            <input type="password" name="" value="" class="bnk-input" id="acc-password-input" placeholder="Account password">
+            <i class="error-txt"></i>
+            <div class="acc-number-submit-bx">
+              <i class="fa fa-spinner fa-spin" id="loader" style="display:none;"></i>
+              <button type="button" name="button" class="account-login-btn" id="acc-number-btn" onclick="loginAccNumber();">Continue</button>
+              <button type="button" name="button" class="account-login-btn" id="acc-password-btn" onclick="loginPassword();">Sign in</button>
+            </div>
+          </form>
+          <div class="info">
             <p>
-              Finding the right home and the right home loan is now more important than ever.
-              We are here to help.
+              FNB Online Banking uses Secure Access, which has a two-step log-in mechanism to make your online banking even safer.
             </p>
-            <a href="account">Explore Home Loans</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row-2">
-      <div class="r2-content-bx">
-        <div class="r2-col-2 fnt-3" id="r2-col-1">
-          <p> Great Rates.</p>
-          <p> Expert Advice.</p>
-          <p>Local Service.</p>
-        </div>
-        <div class="r2-col-2" id="r2-col-2">
-          <p>Today's Featured</p>
-          <p>Mortage Rate:</p>
-          <p id="r2-rate">3.15%</p>
-          <p>Annual Percentage Rate</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row-3">
-      <div class="r3-content">
-
-        <div class="r3-col-3" style="background-image: url(img/row-3-1.jpg)">
-          <div class="r3-col-content">
             <p>
-              Every great business has a great story to tell. Let us help you
-              write your next chapter.
+              A personalised picture and message will help you authenticate our web site; meanwhile a multi-layered authentication process requires registration for any third party transaction.
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="r3-col-3" style="background-image: url(img/row-3-2.jpg)">
-          <div class="r3-col-content">
-            <p>
-              The COVID-19 (coronavirus) pandemic has reshaped all of our daily
-              lives. See the latest on our response.
-            </p>
+      <footer>
+        <span>&copy First Nations Bank of Canada </span>
+      </footer>
+    </div>
+
+    <div class="accounts" id="account-1">
+      <div class="acc-home">
+        <div class="name-of-user fnt-2">
+          <img src="" alt="">
+          <h6>Welcome back,</h6>
+          <h3>AUTOTRADER</h3>
+          <h6 style="color: snow;">Address: <small>2337 Chemin Georges Chertsey Quebec Joc 3ko. Canada</small> </h6>
+          <h6 style="color: snow;">Contact: <small>+1 780 2630 936</small> </h6>
+          <hr>
+          <h6 id="myacc">MY ACCOUNTS</h6>
+          <div class="balance fnt-2">
+            <h1>250,000.00</h1>
+            <small>Available balance</small>
           </div>
         </div>
 
-        <div class="r3-col-3" style="background-image: url(img/row-3-3.jpg)">
-          <div class="r3-col-content">
-            <p>
-              Your card, our way! Take control of your debit card with our new
-              ICardRules Mobile App.
-            </p>
+        <div class="quick-transactions fnt-2">
+          <h5>QUICK TRANSACTION</h5>
+          <div class="qt-contents">
+            <div class="qt-cols" onclick="openHome();">
+              <i class="fa fa-credit-card"></i>
+              <span class="qt-col-txt">Quick transfer</span>
+            </div>
+
+            <div class="qt-cols" onclick="openContact();">
+              <i class="fa fa-comments"></i>
+              <span class="qt-col-txt">Contact Support</span>
+            </div>
+            <div class="qt-cols" onclick="openTransaction();">
+              <i class="fas fa-coins"></i>
+              <span class="qt-col-txt">Transaction</span>
+            </div>
+
+            <div class="qt-cols">
+              <i class="fa fa-phone"></i>
+              <span class="qt-col-txt">Buy Airtime</span>
+            </div>
           </div>
+
         </div>
 
-      </div>
-    </div>
-
-    <div class="row-4 fnt-2">
-      <h3 class="fnt-1">Quick Links</h3>
-      <hr>
-      <div class="r4-content">
-        <div class="r4-col-3" onclick="openLoginPage();">
-          <i class="fa fa-credit-card"></i>
-          <p>Card Support</p>
-        </div>
-
-        <div class="r4-col-3" onclick="openLoginPage();">
-          <i class="fa fa-money"></i>
-          <p>Transfer Support</p>
-        </div>
-
-        <div class="r4-col-3" onclick="openLoginPage();">
-          <i class="fa fa-wallet"></i>
-          <p>Account Support</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row-5 fnt-2">
-      <h3 class="fnt-1">CONTACT US</h3>
-      <hr>
-
-      <div class="google-locate">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41316783.58320004!2d-130.210487082514!3d50.79825341308817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0d03d337cc6ad9%3A0x9968b72aa2438fa5!2sCanada!5e0!3m2!1sen!2sgh!4v1591909252630!5m2!1sen!2sgh" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      </div>
-      <div class="contact-us">
-        <div class="contact-content">
-          <ul>
+        <div class="your-activity fnt-2">
+          <h5>Your Activity</h5>
+          <ul class="ya">
             <li>
-              <i class="fa fa-envelope"></i>
-              <span>
-                <a href="mailto: contact@fnbcanada.com" style="color: inherit; text-decoration: none;">Send us a message</a>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                  Payment received from Ghana Commercial Bank. Albert Bills to account of $10,000.00
+                  <small>5th May 2020, 09:36am</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$10,000.00</h3>
+                <p>SUCCESS</p>
               </span>
             </li>
-            <li>
-              <i class="fa fa-phone-alt"></i>
-              <a href="tel: +16045214650" style="color: inherit; text-decoration: none;"><span>+1 604 521 4650</span></a>
 
-            </li>
             <li>
-              <i class="fa fa-clock-o"></i>
-              <span>Mon - Sat (8am - 5pm)</span>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Haruna Lukoman</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Haruna Lukoman to account of $54,000.00
+                  <small>24th April 2020, 01:02am</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$54,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
             </li>
+
             <li>
-              <i class="fa fa-globe"></i>
-              <span>6750 Fourth Line Rd., North Gower, Ontario KOA 2TO</span>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $10,000.00
+                  <small>22nd April 2020, 09:35am</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$10,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
             </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $10,000.00
+                  <small>01st April 2020, 10:45am</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$10,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $17,000.00
+                  <small>27th March 2020, 02:02pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$17,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $7,000.00
+                  <small>25th March 2020, 09:45am</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$7,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $5,500.00
+                  <small>13th March 2020, 11:05am</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$5,500.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $4,000.00
+                  <small>5th March 2020, 03:45pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$4,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Esther Aggrey</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Esther Aggrey to account of $45,000.00
+                  <small>28th February 2020, 01:15pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$45,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $2,000.00
+                  <small>28th February 2020, 01:15pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$2,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $5,000.00
+                  <small>17th February 2020, 04:30pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$5,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $7,000.00
+                  <small>7th February 2020, 09:55am</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$7,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Peter Smith</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Peter Smith to account of $14,000.00
+                  <small>28th January 2020, 12:05pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$14,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $8,000.00
+                  <small>24th January 2020, 02:30pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$8,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $4,000.00
+                  <small>2nd January 2020, 02:05pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$8,000.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+
+            <li>
+              <span class="ya-trans trans-details">
+                <h4>Incoming wire from Albert Bills</h4>
+                <p>
+                   Payment received from Ghana Commercial Bank. Albert Bills to account of $5,500.00
+                  <small>2nd January 2020, 01:48pm</small>
+                </p>
+              </span>
+              <span class="ya-trans trans-date">
+                <h3>$5,500.00</h3>
+                <p>SUCCESS</p>
+              </span>
+            </li>
+            <div class="view-more">
+              <p onclick="openTransaction();">View All Transactions</p>
+            </div>
+
           </ul>
         </div>
       </div>
-    </div>
-    <footer>
-      <span>&copy First Nations Bank of Canada </span>
-    </footer>
 
+      <div class="acc-transaction">
+        <div class="go-back">
+          <button type="button" name="button">
+            <i class="fa fa-arrow-left"></i>
+            <span>Go Back</span>
+          </button>
+        </div>
+        <ul class="ya">
+          <div class="view-more">
+            <p>Year 2020</p>
+          </div>
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                Payment received from Ghana Commercial Bank. Albert Bills to account of $10,000.00
+                <small>5th May 2020, 09:36am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$10,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
 
-    <div class="menu-bx">
-      <i class="fa fa-close" onclick="closeMenu();"></i>
-      <div class="contents fnt-2">
-         <ul>
-           <li>Home</li>
-           <li>Bank</li>
-           <li>Borrow</li>
-           <li>Invest</li>
-           <li>Login</li>
-         </ul>
-         <span class="sign-in sm-menu-sign" onclick="openLoginPage()">
-           Sign In
-         </span>
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Haruna Lukoman</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Haruna Lukoman to account of $54,000.00
+                <small>24th April 2020, 01:02am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$54,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $10,000.00
+                <small>22nd April 2020, 09:35am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$10,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $10,000.00
+                <small>01st April 2020, 10:45am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$10,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $17,000.00
+                <small>27th March 2020, 02:02pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$17,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $7,000.00
+                <small>25th March 2020, 09:45am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$7,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $5,500.00
+                <small>13th March 2020, 11:05am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$5,500.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $4,000.00
+                <small>5th March 2020, 03:45pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$4,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Esther Aggrey</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Esther Aggrey to account of $45,000.00
+                <small>28th February 2020, 01:15pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$45,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $2,000.00
+                <small>28th February 2020, 01:15pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$2,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $5,000.00
+                <small>17th February 2020, 04:30pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$5,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $7,000.00
+                <small>7th February 2020, 09:55am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$7,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Peter Smith</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Peter Smith to account of $14,000.00
+                <small>28th January 2020, 12:05pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$14,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $8,000.00
+                <small>24th January 2020, 02:30pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$8,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $4,000.00
+                <small>2nd January 2020, 02:05pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$8,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $5,500.00
+                <small>2nd January 2020, 01:48pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$5,500.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+          <div class="view-more">
+            <p>Year 2019</p>
+          </div>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Alice Savage</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $8,000.00
+                <small>25th December 2019, 08:50am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$8,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $9,800.00
+                <small>24th December 2019, 10:50am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$9,800.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $10,000.00
+                <small>9th December 2019, 03:15pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$10,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $9,800.00
+                <small>4th December 2019, 09:36am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$9,800.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Alice Savage</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Alice Savage to account of $5,000.00
+                <small>29th November 2019, 03:10pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$5,000.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $9,800.00
+                <small>29th November 2019, 04:45pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$9,800.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $8,500.00
+                <small>20th November 2019, 03:10pm</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$8,500.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+          <li>
+            <span class="ya-trans trans-details">
+              <h4>Incoming wire from Albert Bills</h4>
+              <p>
+                 Payment received from Ghana Commercial Bank. Albert Bills to account of $7,500.00
+                <small>15th November 2019, 09:22am</small>
+              </p>
+            </span>
+            <span class="ya-trans trans-date">
+              <h3>$7,500.00</h3>
+              <p>SUCCESS</p>
+            </span>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="acc-contact">
+        <div class="go-back">
+          <button type="button" name="button">
+            <i class="fa fa-arrow-left"></i>
+            <span>Go Back</span>
+          </button>
+        </div>
+
+        <div class="container">
+          <div class="contact-us">
+            <div class="contact-content">
+              <ul>
+                <li>
+                  <i class="fa fa-envelope"></i>
+                  <span><a href="mailto: contact@fnbcanada.com" style="color: inherit; text-decoration: none;">Send us a message</a></span>
+                </li>
+                <li>
+                  <i class="fa fa-phone"></i>
+                  <span><a href="tel: +16045214650" style="color: inherit; text-decoration: none;"><span>+1 604 521 4650</span></a></span>
+                </li>
+                <li>
+                  <i class="fa fa-clock-o"></i>
+                  <span>Mon - Sat (8am - 5pm)</span>
+                </li>
+                <li>
+                  <i class="fa fa-globe"></i>
+                  <span>6750 Fourth Line Rd., North Gower, Ontario KOA 2TO</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="acc-transfer">
+        <div class="go-back">
+          <button type="button" name="button">
+            <i class="fa fa-arrow-left"></i>
+            <span>Go Back</span>
+          </button>
+        </div>
+        <div class="container">
+          <form action="action_page.php">
+
+            <label for="fname">Receiver's name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name of Receiver...">
+
+            <label for="lname">Receiver account number</label>
+            <input type="text" id="lname" name="lastname" placeholder="Account Number of Receiver...">
+
+            <label for="lname">Bank name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Receiving Bank Name...">
+
+            <label for="country">Destination country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="lname">Amount</label>
+            <input type="text" id="lname" name="lastname" placeholder="Wire amount...">
+
+            <label for="subject">Reference</label>
+            <textarea id="subject" name="subject" placeholder="Reference..." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+      </div>
+      <div class="bottom-controls">
+        <div class="bc-contents">
+          <span class="bc-bx fnt-2" onclick="openHome();">
+            <i class="fa fa-home"></i>
+            <p>Home</p>
+          </span>
+
+          <span class="bc-bx fnt-2" onclick="">
+            <i class="far fa-credit-card"></i>
+            <p>TRANSFER</p>
+          </span>
+
+          <span class="bc-bx fnt-2" onclick="openContact();">
+            <i class="far fa-comments"></i>
+            <p>HELP</p>
+          </span>
+
+          <span class="bc-bx fnt-2" onclick="openTransaction();">
+            <i class="far fa-bell"></i>
+            <p>TRANSACTIONS</p>
+          </span>
+
+          <span class="bc-bx fnt-2" onclick="logout();">
+            <i class="fas fa-user-alt-slash"></i>
+            <p>LOGOUT</p>
+          </span>
+        </div>
       </div>
     </div>
+    <script type="text/javascript" src="control.js">
 
-
-
-    <script type="text/javascript">
-        function openLoginPage(){
-          window.location.href = "account";
-        }
-        function openMenu(){
-          $(".menu-bx").fadeIn();
-        }
-        function closeMenu(){
-          $(".menu-bx").hide();
-        }
-        function closeCovid(){
-          $(".covid-19").hide();
-        }
-        $(".menu-bx ul li").click(
-          function(){
-            $(".menu-bx").hide();
-          }
-        );
     </script>
   </body>
 </html>
