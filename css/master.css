@@ -1,31 +1,31 @@
 *{
-  margin: auto;
   padding: 0;
+  margin: 0;
 }
-
-
-html, body{
-  height: 100%;
-  width: 100%;
+body{
+  background: #f7f7f7;
 }
-
-
-.login-bx{
-  background: #e0e0e0;
-  height: 100%;
-  position: relative;
+.color{
   color: #2d7d10;
 }
-.login-content{
-  width: 95%;
-  height: 80%;
-  background: #fff;
-  position: absolute;
-  top: 10%;
-  left: 0;
-  right: 0;
-  padding: 10px 0;
+.color-bg{
+  background: #2d7d10!important;
 }
+.bn-header{
+  padding: 10px 0;
+  color: #2d7d10;
+}
+/* WARNING: GOOGLE FONTS */
+.fnt-1{
+  font-family: 'Merriweather', serif;
+}
+.fnt-2{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.fnt-3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+/* END GOOGLE FONTS */
 #bank-logo{
   text-align: center;
   display: block;
@@ -50,288 +50,230 @@ html, body{
   margin-top: 5px;
 }
 
-.online-banking{
-  color: #1f1f1f;
+.link-bg{
+  display: none;
+}
+.sign-in, .sm-menu-sign{
+  font-size: 110%;
+  display: inline-block;
+  background: #315227;
+  color: #fff;
   padding: 10px;
-  margin-top: 8px;
+  margin: auto;
 }
-.online-banking h3{
-  color: #595959;
+.sign-in{
+  background: #e0d424!important;
+  color: #152111!important;
 }
-.bnk-input{
-  padding: 5px;
-  width: 95%;
-  border: none;
-  border-bottom: 1px solid silver;
-  outline: none;
+#menu-bar-bx{
+  background: transparent!important;
+  color: #2d7d10!important;
   display: none;
 }
-.acc-number-submit-bx{
-  text-align: right;
-  padding: 5px 0;
-}
-.account-login-btn{
-  padding: 5px;
-  border: none;
-  outline: none;
-  display: none;
-}
-#acc-password-btn{
-  color: #2d7d10;
-  background: none;
-}
-.error-txt{
-  color: red;
-  font-size: 90%;
-  display: block;
-  padding: 5px;
-}
-.info p{
-  width: 100%;
-  font-size: 90%;
-  margin: 20px 0;
-  color: #999999;
-  text-align: justify;
-}
+/* WARNING: END OF HEADER */
 
-footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-
-
-/* WARNING: ACCOUNTS */
-.accounts{
-  height: 100%;
-  width: 100%;
+/* WARNING: START OF ROW 1 */
+.row-1{
   position: relative;
 }
-.name-of-user img{
-  background: #e0d424;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  text-align: left;
-  margin-bottom: 5px;
-}
-.acc-home{
-  background: #dedede;
-  height: 87%;
-  overflow: auto;
-}
-.name-of-user{
-  background: #042361;
-  letter-spacing: 1px;
-  padding: 5px 8px;
-}
-.name-of-user h3{
-  font-size: 141%;
-  margin-bottom: 10px;
-  color: #fff;
-  font-weight: lighter;
-}
-.name-of-user h6{
-  margin-bottom: 5px;
-  color: #8a8a8a;
-}
-#myacc{
-  padding: 20px 0;
-}
-.balance{
-  text-align: center;
-  color: #fff;
-}
-.balance h1{
-  font-weight: lighter;
-}
-.balance small{
-  font-size: 10px;
-}
-
-
-.quick-transactions{
-  overflow: hidden;
-  background: #fff;
-  padding: 5px 8px;
-}
-.qt-contents{
-  overflow: hidden;
-  margin-top: 15px;
-}
-.qt-cols{
-  float: left;
-  width: 43%;
-  border: 1px solid silver;
-  margin-left: 2%;
-  padding: 5px;
-  border-radius: 5px;
-  margin-top: 15px;
-}
-.qt-cols i{
-  width: 27px;
-  text-align: center;
-  color: #2ab300;
-}
-.qt-cols span{
-  font-size: 90%;
-  letter-spacing: 1px;
-}
-.qt-col-txt{
-  color: rgba(0,0,0,0.7);
-  font-weight: bold;
-}
-
-.your-activity{
-  padding: 20px 10px;
-  background: #fff;
-}
-.ya{
+.row-1-inner-content{
   width: 95%;
   margin: auto;
-  padding: 10px 0;
+  background-image: url(../img/row-1.jpg);
+  background-size: cover;
+  height: 450px;
+  background-position: center;
+  position: relative;
 }
-.ya  li{
-  list-style: none;
-  overflow: hidden;
-  padding: 10px 0;
-  border-bottom: 1px solid grey;
+.covid-19{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 43px 0;
+  z-index: 10;
 }
-
-.ya span{
-  display: inline-block;
-  float: left;
-  width: 48%;
+.covid-19 p{
+  color: #fff;
 }
-.ya-trans{
-  display: inline-block;
-  float: left;
-}
-.ya-trans i{
-  width: 57%;
-  font-size: 25px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 4px 4px 12px;
+.covid-19 i{
   padding: 5px;
-  margin: 10px;
-  color: green;
-}
-.trans-icon{
-  font-size: 25px;
-  font-size: 70%;
-}
-.trans-details{
-  font-size: 70%;
-}
-.trans-details p{
-  color: grey;
-}
-.trans-date{
-  text-align: right;
-  font-size: 70%;
-}
-.trans-date p{
-  color: green;
-  font-size: 77%;
+  color: snow;
+  position: absolute;
+  top: 0;
+  right: 0px;
+  margin: 20px;
 }
 
-.acc-transfer{
-  background: #dedede;
-  height: 87%;
-  overflow: auto;
-}
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-
-.bottom-controls{
+.place-to-live{
   position: absolute;
   bottom: 0;
+  background: #315227;
   width: 100%;
-  padding: 5px 0;
+  padding: 30px 0;
+  overflow: hidden;
+  overflow-x: auto;
 }
-.bc-contents{
-}
-.bc-bx{
-  text-align: center;
-  width: 19%;
-  display: inline-block;
-}
-.bc-bx p{
-  font-size: 63%;
-  color: #8a8a8a;
-}
-.bc-bx i{
-  color: #8a8a8a;
-  font-size: 20px;
-}
-.view-more p{
-  width: 200px;
+.ptl-bx{
+  width: 363px;
   margin: auto;
-  padding: 10px 0;
-  text-decoration: underline;
-  cursor: pointer;
+  color: snow;
+}
+.ptl-bx h3{
+  font-size: 25px;
+}
+.ptl-bx p{
+  letter-spacing: 1px;
+}
+.ptl-bx a{
+  background: #e0d424;
+  padding: 17px 0;
+  display: inline-block;
+  width: 200px;
   text-align: center;
+  color: #152111;
+  text-decoration: none;
+  margin-top: 15px;
 }
+.ptl-bx hr{
+  margin: 5px 0;
+}
+/* WARNING: END OF ROW 1 */
 
 
-/* WARNING: TRANSACTIONS */
-.go-back{
-  padding: 8px;
-  text-align: right;
+/* WARNING: ROW 2  master */
+.row-2{
+  overflow: hidden;
+  background-image: url("../img/row-2.png");
+  background-position: 129px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 50px 0;
 }
-.go-back button{
-  padding: 5px;
+.r2-content-bx{
+  overflow:hidden;
 }
-.acc-transaction{
-  height: 87%;
-  overflow: auto;
+.r2-col-2{
+  width: 49%;
+  float: left;
+  padding: 10px 0;
+}
+#r2-col-1{
+  font-style: italic;
+  font-weight: lighter;
+}
+#r2-col-2{
+  border-left: 1px solid rgba(0,0,0,0.3);
+}
+.r2-col-2 p{
+  width: 90%;
+  font-size: 130%;
+  margin: auto;
+  margin-bottom: 7px;
+}
+#r2-rate{
+  font-size: 150%;
+  color: red;
+}
+/*  END ROW 2 */
+
+/* WARNING: ROW 3 */
+.row-3{
+  overflow:hidden;
+}
+.row-3, .r3-content{
+  overflow: hidden;
+  position: relative;
 }
 
-
-/* WARNING: ACCOUNT - CONTACT */
-.acc-contact{
-  height: 87%;
-  overflow: auto;
+.r3-col-3{
+  margin:auto;
+  height: 300px;
+  width: 95%;
+  margin-right: 1%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+.r3-col-content{
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  background: rgba(49,82,39,0.8);
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 6px solid #f7f7f7;
+  color: #fff;
+}
+.r3-col-content p{
+  width: 90%;
+  margin: auto;
+  padding: 25px 0;
+  font-size: 120%;
+}
+/* END ROW 3  master*/
 
+/* WARNING: ROW 4 */
+.row-4{
+  margin-top: 30px;
+  overflow: hidden;
+}
+.row-4 h3{
+  font-size: lighter;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+.row-4 hr{
+  width: 80px;
+  margin: 10px auto;
+}
+.r4-content{
+  overflow: hidden;
+  position: relative;
+}
+.r4-col-3{
+  float: left;
+  width: 33%;
+  text-align: center;
+
+}
+.r4-col-3 i{
+  margin: 20px 0;
+  font-size: 24px;
+  color: #315227;
+}
+.r4-col-3 p{
+  font-weight: bold;
+  font-size: 90%;
+}
+/* WARNING: END OFO ROW 4 */
+
+/* WARNING: ROW 5 */
+.row-5{
+  margin-top: 100px;
+  overflow: hidden;
+}
+.row-5 h3{
+  font-size: lighter;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  color: #315227;
+}
+.row-5 hr{
+  width: 80px;
+  margin: 10px auto;
+}
+.google-locate{
+  width: 95%;
+  margin: auto;
+}
 .contact-us{
   width: 95%;
   margin: auto;
+  float: right;
 }
 .contact-content{
   padding: 20px 0;
@@ -354,18 +296,8 @@ input[type=submit]:hover {
   font-size: 100%;
   color: #315227;
 }
+/* END OF ROW 5 */
 
-
-
-.fnt-1{
-  font-family: 'Merriweather', serif;
-}
-.fnt-2{
-  font-family: 'Source Sans Pro', sans-serif;
-}
-.fnt-3{
-  font-family: 'Source Sans Pro', sans-serif;
-}
 footer{
   text-align: center;
   background: #dedede;
@@ -373,4 +305,212 @@ footer{
 footer span{
   display: inline-block;
   margin: 0 5px;
+}
+
+.menu-bx{
+  position: absolute;
+  z-index: 500;
+  top: 0;
+  width: 100%;
+  background: black;
+  height: 100%;
+  color: #fff;
+  display: none;
+}
+.menu-bx i{
+  float: right;
+  margin: 20px;
+}
+.menu-bx ul li {
+  list-style: none;
+  list-style: none;
+      padding: 5px;
+      font-size: 120%;
+}
+.contents{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 775px) /* WARNING: DESKTOP */
+and (max-width: 9000000000px){
+  /* WARNING: START OF HEADER */
+  .link-bg{
+    display: block;
+  }
+  header{
+    width: 90%;
+    margin: auto;
+  }
+  #bank-logo{
+    display: inline-block;
+  }
+
+  .link-bg{
+    float: right;
+    font-size: 120%;
+    margin-right: 14px;
+    margin-top: 22px;
+  }
+  .link-bg a{
+     text-decoration: none;
+     margin-right: 9px;
+  }
+  .sign-in{
+    float: right;
+    margin-top: 13px;
+  }
+  /* WARNING: END OF HEADER */
+
+  /* WARNING: START OF ROW 1 */
+  .row-1-inner-content{
+    width: 90%;
+    height: 650px;
+  }
+  .covid-19{
+    padding: 0;
+  }
+  .covid-19 p{
+    position: relative;
+    width: 350px;
+    background: #5c0000;
+    padding: 42px;
+    margin: auto;
+  }
+  .place-to-live{
+    width: 529px;
+  }
+  /* WARNING: END OF ROW 1 */
+
+  /* WARNING:  ROW 2 */
+  .row-2{
+
+  }
+  .r2-content-bx{
+    width: 675px!important;
+    float: right;
+    margin-right: 49px;
+    font-size: 120%;
+  }
+  #r2-col-1 p{
+    text-align: right;
+  }
+  .r2-col-2 {
+      padding: 28px 0!important;
+  }
+  /*  END OF ROW 2 */
+
+  /* WARNING: ROW 3 */
+  .r3-col-3{
+    background-position: center;
+    float: left;
+    width: 31%;
+    margin-left: 1%;
+  }
+  /* END OF ROW 3 */
+
+  /* WARNING: ROW 4 */
+  .r4-content{
+    width: 700px;
+    margin: auto;
+  }
+  /*  END OF ROW 4 */
+
+  /* WARNING: ROW 5 */
+  .google-locate{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 51%;
+  }
+  .contact-us{
+    width: 46%;
+    margin: auto;
+    float: right;
+  }
+  /* END OF ROW 5 */
+
+
+
+} /* WARNING: END OF DESKTOP */
+
+
+
+
+
+@media screen and (max-width:775px) /* WARNING: MOBILE */
+and (min-width: 0px){
+  /* WARNING: START OF HEADER */
+  .sm-menu-holder{
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+  }
+  .sm-menu-sign{
+    width: 83px!important;
+    position: relative;
+  }
+  #menu-bar-bx{
+    display: inline-block;
+  }
+  #menu-bar-bx i{
+    position: absolute;
+    left: 9px;
+    font-size: 23px;
+    top: 8px;
+  }
+  /* WARNING: END OF HEADER */
+
+  /* WARNING: START OF ROW 1 */
+  .row-1-inner-content{
+    height: 524px;
+  }
+  .covid-19{
+    background: #5c0000;
+  }
+  .covid-19 p{
+    width: 60%;
+    margin: auto;
+  }
+  /* WARNING: END OF ROW 1 */
+
+/* WARNING: ROW 2 */
+  .r2-content-bx {
+    width: 95%;
+    margin: auto;
+}
+#r2-col-1 p{
+  text-align: right;
+}
+/* WARNING: END OF ROW 2 */
+
+/* WARNING: ROW 3 */
+.r3-col-3{
+  margin-top: 20px;
+}
+/* END  ROW 3 */
+}
+
+@media screen and (max-width: 393px)
+and (min-width: 0px){
+  .ptl-bx {
+      width: 281px!important;
+      text-align: justify!important;
+  }
+  .ptl-bx h3{
+    font-size: 120%!important;
+  }
+
+  /* WARNING: ROW 2 */
+    .r2-content-bx {
+      width: 95%;
+      margin: auto;
+  }
+  /* WARNING: END OF ROW 2 */
+
+
 }
