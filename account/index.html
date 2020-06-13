@@ -52,17 +52,18 @@
       </footer>
     </div>
 
-    <div class="accounts">
+    <div class="accounts" id="account-1">
       <div class="acc-home">
         <div class="name-of-user fnt-2">
           <img src="" alt="">
           <h6>Welcome back,</h6>
           <h3>AUTOTRADER</h3>
           <h6 style="color: snow;">Address: <small>2337 Chemin Georges Chertsey Quebec Joc 3ko. Canada</small> </h6>
+          <h6 style="color: snow;">Contact: <small>+1 780 2630 936</small> </h6>
           <hr>
           <h6 id="myacc">MY ACCOUNTS</h6>
           <div class="balance fnt-2">
-            <h1>15,566.00</h1>
+            <h1>250,000.00</h1>
             <small>Available balance</small>
           </div>
         </div>
@@ -70,18 +71,18 @@
         <div class="quick-transactions fnt-2">
           <h5>QUICK TRANSACTION</h5>
           <div class="qt-contents">
-            <div class="qt-cols">
+            <div class="qt-cols" onclick="openHome();">
               <i class="fa fa-credit-card"></i>
               <span class="qt-col-txt">Quick transfer</span>
             </div>
 
-            <div class="qt-cols">
+            <div class="qt-cols" onclick="openContact();">
               <i class="fa fa-comments"></i>
               <span class="qt-col-txt">Contact Support</span>
             </div>
-            <div class="qt-cols">
-              <i class="fa fa-wallet"></i>
-              <span class="qt-col-txt">Transaction History</span>
+            <div class="qt-cols" onclick="openTransaction();">
+              <i class="fas fa-coins"></i>
+              <span class="qt-col-txt">Transaction</span>
             </div>
 
             <div class="qt-cols">
@@ -319,7 +320,7 @@
               </span>
             </li>
             <div class="view-more">
-              <p>View All Transactions</p>
+              <p onclick="openTransaction();">View All Transactions</p>
             </div>
 
           </ul>
@@ -714,6 +715,43 @@
 
       </div>
 
+      <div class="acc-transfer">
+        <div class="go-back">
+          <button type="button" name="button">
+            <i class="fa fa-arrow-left"></i>
+            <span>Go Back</span>
+          </button>
+        </div>
+        <div class="container">
+          <form action="action_page.php">
+
+            <label for="fname">Receiver's name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Name of Receiver...">
+
+            <label for="lname">Receiver account number</label>
+            <input type="text" id="lname" name="lastname" placeholder="Account Number of Receiver...">
+
+            <label for="lname">Bank name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Receiving Bank Name...">
+
+            <label for="country">Destination country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="lname">Amount</label>
+            <input type="text" id="lname" name="lastname" placeholder="Wire amount...">
+
+            <label for="subject">Reference</label>
+            <textarea id="subject" name="subject" placeholder="Reference..." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+      </div>
       <div class="bottom-controls">
         <div class="bc-contents">
           <span class="bc-bx fnt-2" onclick="openHome();">
@@ -723,7 +761,7 @@
 
           <span class="bc-bx fnt-2" onclick="">
             <i class="far fa-credit-card"></i>
-            <p>CARDS</p>
+            <p>TRANSFER</p>
           </span>
 
           <span class="bc-bx fnt-2" onclick="openContact();">
