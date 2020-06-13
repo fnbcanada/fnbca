@@ -68,6 +68,7 @@ $(".account-1").hide();
 $(".acc-home").show();
 $(".acc-transaction").hide();
 $(".acc-contact").hide();
+$(".acc-transfer").hide();
 
 function openTransaction(){
   $(".acc-home").hide();
