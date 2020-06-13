@@ -356,6 +356,23 @@ input[type=submit]:hover {
 }
 
 
+@media screen and (min-width: 770px)
+and (max-width: 80000000px){
+  .login-content {
+    width: 700px;
+
+    padding: 24px;
+}
+.balance {
+    text-align: left;
+    padding: 10px;
+}
+.your-activity, .transfer-cnt {
+    width: 770px;
+}
+}
+
+
 
 .fnt-1{
   font-family: 'Merriweather', serif;
