@@ -104,6 +104,7 @@ footer{
 
 /* WARNING: ACCOUNTS */
 .accounts{
+  display: none;
   height: 100%;
   width: 100%;
   position: relative;
@@ -283,6 +284,7 @@ input[type=submit]:hover {
   bottom: 0;
   width: 100%;
   padding: 5px 0;
+  background: #fff;
 }
 .bc-contents{
 }
@@ -370,6 +372,13 @@ and (max-width: 80000000px){
 .your-activity, .transfer-cnt {
     width: 770px;
 }
+
+/* WARNING: PADDING FOR ALL */
+.acc-home, .acc-transaction, .acc-contact, .acc-transfer{
+  
+}
+
+
 }
 
 
