@@ -30,7 +30,7 @@ function loginAccNumber(){
 }
 function loginPassword(){
   var acc_password = $("#acc-password-input").val();
-  if (acc_password == "auto_weicher021") {
+  if (acc_password == "gilweicher021") {
     //Load for 3 seconds
     //hide button and input
     //show button
