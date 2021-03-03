@@ -4,6 +4,8 @@ $(" form").submit(function(e){
 
 $('.transfer').hide();
 
+$('.accounts').hide();
+
 
 function loginAccNumber(){
   var acc_number = $("#acc-number-input").val();
