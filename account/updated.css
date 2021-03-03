@@ -9,6 +9,12 @@
     height: 100%;
     display: table;
 }
+.accounts{
+    display: none;
+}
+#account-1{
+    display: none;
+}
 .coderman{
     display: table-cell;
     vertical-align: middle;
