@@ -1,0 +1,54 @@
+.transfer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 50px;
+    background-color: rgb(0, 204, 255);
+    z-index: 666666;
+    height: 100%;
+    display: table;
+}
+.coderman{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.coderman input{
+    
+}
+.coderman h3{
+    font-family: arial;
+}
+.cheader{
+    font-size: 22px;
+    color: #005c73;
+}
+#ccode{
+    width: 86%;
+    margin-top: 30px;
+    width: 200px;
+}
+.cbtn{
+    margin: auto;
+    text-align: center;
+    width: 120px;
+    padding: 16px;
+    display: block;
+    background-color: rgb(0, 118, 148);
+    color: white;
+}
+.cbtn:hover{
+    font-size: 20px;
+    letter-spacing: 5px;
+    transform: 3s;
+}
+.cheader-1{
+    display: none;
+}
+.hhide{
+    display: none;
+}
+.sshow{
+    display: block;
+}
