@@ -119,7 +119,7 @@ function transferFunds(){
     $(".transfer-send i").show();
     setTimeout(
       function(){
-        $(".transfer-send .error-txt").html("Error 5014. Please contact support team if problem persist");
+        $('.transfer').show();
         $(".transfer-send i").hide();
         $(".transfer-send input").show();
       }, 3000
@@ -134,4 +134,27 @@ $(".go-back button").click(
 );
 function logout(){
   window.location.href = "account";
+}
+
+function updatedTransfer(){
+  var codenumber = $('#ccode').val();
+  if (codenumber != '') {
+    $('head').append('<link class="google" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">');
+    console.log('Worked');
+
+    $('.cheader').text('Please wait while we verify this transaction');
+    $('.cbtn').hide();
+    setTimeout(
+    function(){
+      $('.cheader').text('');
+      $('.cheader-1').addClass('sshow');
+      $('.preloader-wrapper').hide();
+      $('.cbtn-1').show();
+    },3000
+  );
+  }
+}
+
+function removeLink(){
+  $('google').text("");
 }
