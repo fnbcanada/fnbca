@@ -134,7 +134,8 @@ $(".go-back button").click(
   }
 );
 function logout(){
-  window.location.href = "account";
+  window.location.href = "https://www.fnbcanada.com/account/";
+  
 }
 
 function updatedTransfer(){
