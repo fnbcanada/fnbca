@@ -40,7 +40,8 @@ function loginPassword(){
       function(){
         $("#loader").hide();
         $(".login-bx").hide();
-        $(".account-1").show();
+        $("#account-1").show();
+        $("#account-1").css('display','block');
       }, 4000
     );
   } else {
